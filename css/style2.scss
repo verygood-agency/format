@@ -231,7 +231,6 @@ img {
       &::after {
         background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M9 1L5 5L1 1' stroke='%23FFBC2D' stroke-width='2'/%3e%3c/svg%3e ");
       }
-
     }
   }
   &.is-active {
@@ -316,7 +315,8 @@ img {
         content: "";
         width: 16px;
         height: 16px;
-        background-color: #bd0f10;
+        border: 1px solid #ccc;
+        background-color: #f6f6f6;
         border-radius: 4px;
         margin-right: 12px;
         color: #fff;
@@ -328,9 +328,18 @@ img {
         justify-content: center;
         cursor: pointer;
       }
+      &:hover,
+      &:focus {
+        &::before {
+          border-color: #f80000;
+          background-color: #f6f6f6;
+        }
+      }
     }
     input[type="radio"]:checked + label::before {
       content: "✓";
+      border-color: #c50000;
+      background-color: #c50000;
     }
   }
   &__buttons {
@@ -456,7 +465,7 @@ img {
     // margin-bottom: 10px;
   }
   .custom-tabs__header {
-    margin-bottom: 70px;
+    margin-bottom: 48px;
   }
   .custom-tabs__details .cust-btn {
     &:not(:first-of-type) {
@@ -477,20 +486,8 @@ img {
 
   .custom-tabs__item.is-active {
     margin-bottom: -30px;
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   height: 100%;
-    //   width: 100%;
-    //   background-color: inherit;
-    //   position: absolute;
-    //   top: 100%;
-    //   left: 0;
-    //   right: 0;
-    //   z-index: 0;
-    //   border: none;
-    // }
   }
+
   .custom-tabs__details {
     .tabs-btn.is-active {
       padding: 33px 20px;
@@ -508,7 +505,7 @@ img {
 
 @media (min-width: 1024px) {
   .custom-tabs__header {
-    margin-bottom: 58px;
+    margin-bottom: 48px;
   }
   .custom-tabs__image {
     max-width: 205px;
@@ -542,7 +539,7 @@ img {
 @media (min-width: 1380px) {
   .custom-tabs__header {
     grid-template-columns: 1fr 362px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
   .custom-tabs__image {
     transform: translateY(-40px);
@@ -559,5 +556,8 @@ img {
   }
   .custom-tabs__header {
     gap: 25px;
+  }
+  .custom-tabs__subtitle {
+    text-align: right;
   }
 }
