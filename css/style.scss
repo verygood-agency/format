@@ -210,6 +210,11 @@ img {
   height: 500px;
 }
 
+.glyph-icon-loop:before {
+  font-weight: 700;
+  color: #c50000;
+}
+
 // АДАПТИВЧИК
 
 @media (max-width: 1440px) {

@@ -171,11 +171,11 @@ img {
 
 .widget-item-block-desktop {
   background-position: 0 -37px !important;
-  background-image: url("../img/hero-bg-1.jpg");
+  background-image: url("http://format.webtm.ru/upload/iblock/6ab/3vwy3lbt64agvr1zq5ww2je11mhdce2z.jpg");
 }
 
 .widget-item-block-mobile {
-  background-image: url("../img/hero-bg-1.jpg");
+  background-image: url("http://format.webtm.ru/upload/iblock/6ab/3vwy3lbt64agvr1zq5ww2je11mhdce2z.jpg");
 }
 
 .intec-grid--mod-2 .intec-grid-item.intec-grid-item-a-stretch {
@@ -199,6 +199,11 @@ img {
 
 .widget-item-content-body.mod {
   height: 500px;
+}
+
+.glyph-icon-loop:before {
+  font-weight: 700;
+  color: #c50000;
 }
 
 @media (max-width: 1440px) {
