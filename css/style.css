@@ -171,11 +171,11 @@ img {
 
 .widget-item-block-desktop {
   background-position: 0 -37px !important;
-  background-image: url("http://format.webtm.ru/upload/iblock/6ab/3vwy3lbt64agvr1zq5ww2je11mhdce2z.jpg");
+  background-image: url("../img/hero-bg-1.jpg");
 }
 
 .widget-item-block-mobile {
-  background-image: url("http://format.webtm.ru/upload/iblock/6ab/3vwy3lbt64agvr1zq5ww2je11mhdce2z.jpg");
+  background-image: url("../img/hero-bg-1.jpg");
 }
 
 .intec-grid--mod-2 .intec-grid-item.intec-grid-item-a-stretch {
